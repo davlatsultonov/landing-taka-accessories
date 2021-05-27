@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Lato';
+    font-weight: 300;
+    src: url(../fonts/lato/lato-light.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 400;
+    src: url(../fonts/lato/lato-regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 600;
+    src: url(../fonts/lato/lato-medium.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-weight: 700;
+    src: url(../fonts/lato/lato-black.woff) format("woff");
+}
+
+/* montserrat */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 300;
+    src: url(../fonts/proxima_nova/ProximaNova-Light.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    src: url(../fonts/proxima_nova/ProximaNova-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    src: url(../fonts/proxima_nova/ProximaNova-Bold.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 900;
+    src: url(../fonts/proxima_nova/ProximaNova-Extrabld.woff) format("woff");
+}
