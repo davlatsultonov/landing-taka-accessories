@@ -40,19 +40,6 @@
                     <span></span>
                 </i>
             </div>
-            <nav class="header__nav nav">
-                <div class="nav__sliders"></div>
-                <div class="nav__sliders"></div>
-                <div class="nav__sliders"></div>
-                <ul class="nav__items">
-                    <li class="nav__items_item">
-                        <a href="javascript:void(0);" aria-current="page" class="router-link-exact-active router-link-active">Главная</a>
-                    </li>
-                    <li class="nav__items_item">
-                        <a href="javascript:void(0);" class="">Продвижение</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </div>
     <div class="content">
@@ -91,38 +78,106 @@
             Оставляя контактную информацию, вы <a href="#">соглашаетесь</a> на обработку персональных данных
         </footer>
     </div>
-</div>
 
-<div class="modal-view">
-    <div class="container">
-        <h1>Заказать звонок</h1>
+    <div class="modal-view ">
+        <div class="container">
+            <h1>Каталог известных брендов</h1>
 
-        <div class="modal-view-close js-feedback-toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 18 18">
-                <path fill="none" stroke="#d9d7d7" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-miterlimit="20" stroke-width="1.5" d="M1 1l16 16"></path>
-                <path fill="none" stroke="#d9d7d7" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-miterlimit="20" stroke-width="1.5" d="M17 1L1 17"></path>
-            </svg>
-        </div>
-
-        <form class="form modal-view__form js-zayavka">
-            <div class="form__input-field error">
-                <input type="tel" name="phone" autocomplete="on" class="input phone-mask"
-                       placeholder="Ваш телефон">
-                <span class="error_alert">некорректный телефон</span>
+            <div class="catalog-tabs">
+                <div class="catalog-tabs__top">
+                    <button class="catalog-tab catalog-tab--active" data-action="insta">В Instagram</button>
+                    <button class="catalog-tab" data-action="tg">В Telegram</button>
+                </div>
+                <div class="catalog-tabs__content">
+                    <ul data-id="insta" class="catalog-list catalog-list--active">
+                        <li>
+                            <a href="#">
+                                Мужская одежда
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Женская одежда
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Детская одежда
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Украшения
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Постельное бельё
+                            </a>
+                        </li>
+                    </ul>
+                    <ul data-id="tg" class="catalog-list">
+                        <li>
+                            <a href="#">
+                                Мужская одежда
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Женская одежда
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Детская одежда
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Украшения
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Постельное бельё
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <button class="btn">
-                Заказать звонок
-            </button>
+            <p style="margin-bottom: 38px;">
+                Бренд TAKA на <a href="#" class="link-to-company"><img src="./images/wildberries.svg" alt="wildberries"></a>
+            </p>
 
-            <a href="javascript:void(0)" class="form__btn-close js-feedback-toggle">
-                Закрыть
-            </a>
-        </form>
+            <h1>Для консультации</h1>
+
+            <div class="modal-view__bottom">
+                <ul class="social-icons">
+                    <li class="social-icons__item">
+                        <a href="#">
+                            <img src="./images/icons/social-icons-block/insta.svg" alt="instagram icon">
+                        </a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a href="#">
+                            <img src="./images/icons/social-icons-block/wa.svg" alt="whatsapp icon">
+                        </a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a href="#">
+                            <img src="./images/icons/social-icons-block/tg.svg" alt="telegram icon">
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="consultant"></div>
+            </div>
+        </div>
     </div>
 </div>
+
+
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/jquery.mask.min.js"></script>

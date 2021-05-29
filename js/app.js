@@ -1,13 +1,7 @@
 $(function () {
-    $('.hamburger__icon').on('click', function () {
-        $(this).toggleClass('open');
-        $(this).closest('.header').toggleClass('open');
-    });
-
-
     const formTabBtns = $('.form-tab-btn');
 
-    $('.form-tab-btn').on('click', function () {
+    formTabBtns.on('click', function () {
         const buttonName = $(this).data('buttonName'),
               formInput = $(this).closest('.form').find('.form__bottom').find('.input');
 
@@ -16,19 +10,26 @@ $(function () {
         formInput.attr('name', buttonName);
     });
 
-    $('.js-feedback-toggle').click(function (e) {
+    const catalogTabBtns = $('.catalog-tab');
+    const catalogLists = $('.catalog-tabs__content ul');
+
+    catalogTabBtns.on('click', function () {
+        const tabID = $(this).data('action'),
+              catalogList = $(this).closest('.catalog-tabs').find('.catalog-tabs__content').find(`[data-id="${tabID}"]`);
+
+        if (!tabID.length || !catalogList.length) return;
+
+        catalogTabBtns.each((index, item) => $(item).removeClass('catalog-tab--active'));
+        catalogLists.each((index, item) => $(item).removeClass('catalog-list--active'));
+        $(this).addClass('catalog-tab--active');
+        catalogList.addClass('catalog-list--active');
+    });
+
+    $('.hamburger__icon').on('click', function (e) {
         e.preventDefault();
+        $(this).toggleClass('open');
 
-        if (!$('.modal-view, .wrapper').hasClass('modal-view--open')) {
-            $('.modal-view').addClass('modal-view--open');
-            $('.wrapper').addClass('modal-view--open');
-            disableScrollInActiveModal();
-        } else {
-            $('.modal-view').removeClass('modal-view--open');
-            $('.wrapper').removeClass('modal-view--open');
-            enableScrollInActiveModal();
-        }
-
+        $('.modal-view').toggleClass('modal-view--open');
     });
 
     function disableScrollInActiveModal() {
