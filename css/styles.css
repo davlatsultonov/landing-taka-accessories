@@ -699,7 +699,6 @@ p {
     background: #fff;
     z-index: -1;
     color: #332e2e;
-    padding-top: 26px;
     opacity: 0;
     transform: translateX(140%);
     transition: opacity 176ms ease-out, transform 450ms ease;
