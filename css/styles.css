@@ -133,6 +133,7 @@ p {
     width: 100%;
     max-width: var(--container-max-width);
     margin: auto;
+    overflow: hidden;
 }
 
 .wrapper.modal-view--open {
@@ -708,7 +709,7 @@ p {
     color: #332e2e;
     padding-top: 26px;
     opacity: 0;
-    transform: translateX(-40%);
+    transform: translateX(140%);
     transition: opacity 176ms ease-out, transform 450ms ease;
 }
 
