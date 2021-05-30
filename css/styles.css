@@ -1,6 +1,5 @@
 :root {
-    --main-color: #dc1414;
-    --orange: #feba00;
+    --main-color: #d91646;
     --container-max-width: 480px;
 }
 
@@ -146,7 +145,7 @@ p {
     flex-grow: 1;
     background-image: url("../images/main-bg.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     background-size: cover;
     margin: auto;
     position: relative;
@@ -381,7 +380,7 @@ p {
     flex-wrap: wrap;
     position: relative;
     width: 100%;
-    padding: 1rem 16px .9375rem;
+    padding: 12px 16px;
 }
 
 .header__left {
@@ -448,7 +447,6 @@ p {
     letter-spacing: -0.1px;
     font-size: 7px;
     line-height: normal;
-    margin-top: 8px;
     margin-bottom: 8px;
 }
 
@@ -476,12 +474,6 @@ p {
     width: 100%;
     margin-top: 26px;
     margin-bottom: 32px;
-}
-
-@media (min-width: 414px) {
-    .form {
-        margin-top: 35px;
-    }
 }
 
 /*@media (min-width: 768px) {
@@ -665,7 +657,7 @@ p {
 }
 
 .catalog-list li:not(:last-of-type){
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .catalog-list li a {
@@ -700,7 +692,7 @@ p {
     align-items: center;
     width: 100%;
     position: absolute;
-    top: 50px;
+    top: 48px;
     bottom: 0;
     left: 0;
     right: 0;
