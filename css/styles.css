@@ -322,7 +322,7 @@ p {
 .hamburger__icon span {
     position: absolute;
     left: 0;
-    background-color: #d9d7d7;
+    background-color: #999;
     height: .125rem;
     border-radius: .125rem;
     pointer-events: none;
