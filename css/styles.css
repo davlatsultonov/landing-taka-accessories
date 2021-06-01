@@ -159,6 +159,12 @@ p {
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
+    position: relative;
+}
+
+.content__intro {
+    position: absolute;
+    top: 0;
 }
 
 .content h1, .content p {
@@ -169,7 +175,7 @@ p {
     font-size: 24px;
     letter-spacing: -0.2px;
     line-height: 30px;
-    margin-top: 48px;
+    margin-top: 72px;
     margin-bottom: 18px;
     color: #f3f2f2;
 }
